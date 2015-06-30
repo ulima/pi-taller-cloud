@@ -1,0 +1,3 @@
+{ "_id" : { "$oid" : "5592eebfcf5cae615e92d8c0" }, "nombre" : "Mark Zuckerberg", "codigo" : "20164534", "password" : "123" }
+{ "_id" : { "$oid" : "5592eed2cf5cae615e92d8c1" }, "nombre" : "Larry Page", "codigo" : "20161234", "password" : "123" }
+{ "_id" : { "$oid" : "5592eee4cf5cae615e92d8c2" }, "nombre" : "Marissa Mayer", "codigo" : "20169876", "password" : "123" }
