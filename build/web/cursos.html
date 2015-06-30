@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>UL Alumnos - Cursos</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link href="css/principal.css" rel="stylesheet">
+        <link href="css/cursos.css" rel="stylesheet">
+    </head>
+    <body>
+        <div class="container">
+            <h1>
+                <img class="logo" src="images/logo.png" alt="Logo ULima"/>
+                UL Alumnos
+            </h1>
+            <section class="menu">
+                <ul>
+                    <li><a href="perfil.html" >Mi perfil</a></li>
+                    <li><a href="#" >Mis cursos</a></li>
+                </ul>
+            </section>
+            <section class="contenido">
+                <h2>Mis cursos</h2>
+                <div class="agregar-curso">
+                    <select id="selCursos" class="form-control">
+                        <option value="1">Programacion Internet</option>
+                    </select>
+                    <button class="btn btn-lg btn-primary" type="submit"> 
+                        Agregar
+                    </button>
+                </div>
+                <table class="table table-hover">
+                    <thead>
+                        <tr>
+                            <th>Id</th>
+                            <th>C&oacute;digo</th>
+                            <th>Nombre</th>
+                            <th>Acciones</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>1456</td>
+                            <td>Ingeniería de datos</td>
+                            <td><a href="EliminarCurso">Eliminar</a></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+        </div>
+    </body>
+</html>

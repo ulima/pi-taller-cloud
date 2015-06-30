@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>UL Alumnos - Perfil</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link href="css/principal.css" rel="stylesheet">
+        
+    </head>
+    <body>
+        <div class="container">
+            <h1>
+                <img class="logo" src="images/logo.png" alt="Logo ULima"/>
+                UL Alumnos
+            </h1>
+            <section class="menu">
+                <ul>
+                    <li><a href="#" >Mi perfil</a></li>
+                    <li><a href="cursos.html" >Mis cursos</a></li>
+                </ul>
+            </section>
+            <section class="contenido">
+                <h2>Mi perfil</h2>
+                <form action="GuardarPerfil" method="POST">
+                    <div class="form-group">
+                        <label for="inputCodigo" >C&oacute;digo de alumno</label>
+                        <input type="text" id="inputCodigo" class="form-control" 
+                               placeholder="Ingrese c&oacute;digo" 
+                               contenteditable="false">
+                    </div>
+                    <div class="form-group">
+                        <label for="inputNombre" >Nombre:</label>
+                        <input type="text" id="inputNombre" class="form-control" 
+                               placeholder="Ingrese nombre" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="inputCarrera" >Carrera:</label>
+                        <select id="selCarrera" class="form-control">
+                            <option value="1">Ingeniería de Sistemas</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="inputPassword" >Password</label>
+                        <input type="password" id="inputPassword" 
+                               class="form-control" placeholder="Ingrese Password" 
+                               required>
+                    </div>
+                    
+                    <button class="btn btn-lg btn-primary" type="submit">
+                        Guardar
+                    </button>
+                </form>
+            </section>
+        </div>
+    </body>
+</html>

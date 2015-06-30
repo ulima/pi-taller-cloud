@@ -1,0 +1,21 @@
+body {
+  padding-bottom: 40px;
+}
+
+h1{
+    padding-bottom: 40px;
+}
+
+.contenido{
+    float: right;
+    width: 80%;
+}
+
+.logo{
+    width: 100px;
+}
+
+.menu{
+    width: 20%;
+    float: left;
+}
