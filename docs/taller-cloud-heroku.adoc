@@ -13,7 +13,7 @@ Taller Cloud Heroku
 
 Al verificar su cuenta de mongo, se le dirige a la siguiente página:
 
-image::imgs/cloud1.png[]
+image::imgs/cloud1.png[scaledwidth="100%"]
 
 Crear una nueva base de datos haciendo click en la opción "Create new".
 
@@ -27,16 +27,16 @@ Dentro de la pantalla "_Create new subscription_", llenar lo siguiente:
 
 WARNING: Asegurarse que el Price sea _$0 / month_
 
-image::imgs/cloud2.png[]
+image::imgs/cloud2.png[scaledwidth="100%"]
 
 Si todo estuvo correcto, se tendrá la siguiente pantalla:
 
-image::imgs/cloud3.png[]
+image::imgs/cloud3.png[scaledwidth="100%"]
 
 Hacemos click en la base de datos ul_alumnos. Con esto se muestra el detalle de
 la base de datos.
 
-image::imgs/cloud4.png[]
+image::imgs/cloud4.png[scaledwidth="100%"]
 
 * En la parte superior, se muestran los datos para realizar conexiones.
 * En la parte inferior, se ven las colecciones que tiene la base de datos, así
@@ -46,7 +46,7 @@ Para poder conectarnos desde una aplicación externa (sea un cliente mongo en
 shell o nuestra webapp), debemos crear un usuario. Para esto hacemos click en
 la pestaña "_Users_" y luego el botón "_Add database user_".
 
-image::imgs/cloud5.png[]
+image::imgs/cloud5.png[scaledwidth="100%"]
 
 En esta pantalla se debe poner el nombre de usuario (ul_alumnos) y su password
 (ul_alumnos). Posteriormente hacer click en el botón "_Create_".
@@ -56,7 +56,7 @@ datos con el usuario creado solo será de lectura.
 
 Si todo estuvo correcto, se verá lo siguiente:
 
-image::imgs/cloud6.png[]
+image::imgs/cloud6.png[scaledwidth="100%"]
 
 == Conexión desde línea de comandos (shell)
 
@@ -139,7 +139,7 @@ public class Configuracion {
 Entrar a www.heroku.com y loguearse. A continuación visualizará la siguiente
 pantalla:
 
-image::imgs/cloud7.png[]
+image::imgs/cloud7.png[scaledwidth="100%"]
 
 Procedamos a crear una nueva aplicación, para esto, hacer click en el "+" que
 se encuentra en la parte superior derecha.
@@ -147,7 +147,7 @@ se encuentra en la parte superior derecha.
 Tras esto, se mostrará la pantalla de "_New App_". Llenar con los datos de su
 aplicación, para luego presionar el botón "_Create App_".
 
-image::imgs/cloud8.png[]
+image::imgs/cloud8.png[scaledwidth="100%"]
 
 IMPORTANT: Se sugiere poner un nombre a la aplicación en el campo "_App Name_",
 caso contrario, Heroku le asignará un nombre por defecto.
@@ -181,4 +181,4 @@ http://ul-alumnos.herokuapp.com/
 
 Y debemos tener la siguiente pantalla:
 
-image::imgs/cloud9.png[]
+image::imgs/cloud9.png[scaledwidth="100%"]
