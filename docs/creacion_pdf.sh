@@ -1,0 +1,1 @@
+a2x -D ./build -fpdf -darticle --verbose --keep-artifacts --no-xmllint --fop taller-cloud-heroku.adoc

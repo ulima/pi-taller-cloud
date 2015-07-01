@@ -63,10 +63,9 @@ image::imgs/cloud6.png[]
 Desde línea de comandos (shell) y utilizando los datos de la imagen anterior,
 poner el siguiente comando:
 
-[source]
-----
+....
 hernan$ ds031711.mongolab.com:31711/ul_alumnos -u ul_alumnos -p ul_alumnos
-----
+....
 
 Siendo:
 
@@ -76,27 +75,24 @@ Siendo:
 
 Si todo estuvo correcto, se verá el prompt del mongodb.
 
-[source]
-----
+....
 hernan$ ./mongo ds031711.mongolab.com:31711/ul_alumnos -u ul_alumnos -p ul_alumnos
 MongoDB shell version: 2.6.5
 connecting to: ds031711.mongolab.com:31711/ul_alumnos
 rs-ds031711:PRIMARY>
-----
+....
 
 Ahora procederemos a importar los documentos necesarios para el laboratorio.
 
 Desde la línea de comandos (shell), importaremos los datos de la colección
 alumnos.json. Para esto, teclear lo siguiente:
 
-[source]
 ----
 hernan$ ./mongoimport -h <host>:<port> -u <usuario> -p <password> -d ul_alumnos -c alumnos --file alumnos.json
 ----
 
 Si todo estuvo correcto, saldrá los siguiente:
 
-[source]
 ----
 hernan$ ./mongoimport -h <host>:<port> -u <usuario> -p <password> -d ul_alumnos -c alumnos --file alumnos.json
 connected to: <host>:<port>
@@ -105,14 +101,12 @@ connected to: <host>:<port>
 
 Ahora procederemos a importar la colección carreras.
 
-[source]
 ----
 hernan$ ./mongoimport -h <host>:<port> -u ul_alumnos -p ul_alumnos -d ul_alumnos -c carreras --file carreras.json
 ----
 
 Si todo estuvo correcto, saldrá los siguiente:
 
-[source]
 ----
 hernan$ ./mongoimport -h <host>:<port> -u ul_alumnos -p ul_alumnos -d ul_alumnos -c carreras --file carreras.json
 connected to: <host>:<port>
@@ -167,7 +161,6 @@ caso contrario, Heroku le asignará un nombre por defecto.
 Luego de haber descargado el heroku toolbelt, desde línea de comandos,
 escribir lo siguiente:
 
-[source]
 ----
 hernan$ heroku plugins:install https://github.com/heroku/heroku-deploy
 ----
@@ -176,7 +169,6 @@ hernan$ heroku plugins:install https://github.com/heroku/heroku-deploy
 
 Desde la línea de comandos, escribimos lo siguiente:
 
-[source]
 ----
 hernan$ heroku deply:war --war <ruta_a_war>/ULAlumnos.war --app ul-alumnos
 ----
