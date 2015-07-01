@@ -3,10 +3,11 @@ Taller Cloud Heroku
 
 == Prerrequisitos
 
-* Descargar la aplicación <ruta>
+* Descargar la aplicación desde github: https://github.com/ulima/pi-taller-cloud
 * Tener instalado el cliente mongodb.
 * Creación de cuenta en servicio mongolab (https://mongolab.com)
-* Creación de cuenta en servicio heroku
+* Creación de cuenta en servicio heroku,
+* Tener heroku toolbelt instalado (https://toolbelt.heroku.com)
 
 == Creación y configuración de base de datos MongoDB
 
@@ -161,4 +162,31 @@ caso contrario, Heroku le asignará un nombre por defecto.
 
 === Creación de WAR y configuración de app
 
+=== Instalar el heroku-deploy
+
+Luego de haber descargado el heroku toolbelt, desde línea de comandos,
+escribir lo siguiente:
+
+[source]
+----
+hernan$ heroku plugins:install https://github.com/heroku/heroku-deploy
+----
+
 === Subir webapp a Heroku
+
+Desde la línea de comandos, escribimos lo siguiente:
+
+[source]
+----
+hernan$ heroku deply:war --war <ruta_a_war>/ULAlumnos.war --app ul-alumnos
+----
+
+=== Comprobamos que nuestra webapp haya sido correctamente subida
+
+En un navegador, ingresamos la siguiente URL:
+
+http://ul-alumnos.herokuapp.com/
+
+Y debemos tener la siguiente pantalla:
+
+image::imgs/cloud9.png[]
