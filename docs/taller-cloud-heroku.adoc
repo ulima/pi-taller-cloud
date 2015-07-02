@@ -170,7 +170,7 @@ hernan$ heroku plugins:install https://github.com/heroku/heroku-deploy
 Desde la línea de comandos, escribimos lo siguiente:
 
 ----
-hernan$ heroku deply:war --war <ruta_a_war>/ULAlumnos.war --app ul-alumnos
+hernan$ heroku deploy:war --war <ruta_a_war>/ULAlumnos.war --app ul-alumnos
 ----
 
 === Comprobamos que nuestra webapp haya sido correctamente subida
